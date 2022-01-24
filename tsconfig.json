@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        // "lib": [ "ES5", "ES6", "ES7", "ES2015", "ES2016", "ES2017", "ES2018", "ESNext" ],
+        "noImplicitAny": true,
+        "allowJs": true,
+        "moduleResolution":"node",
+        "jsx": "react",
+        "outDir": "./lib",
+        "rootDir": "./core",
+        "removeComments": false,
+        "target": "ES2020",
+        // "module": "commonjs",
+        "declaration": true,
+        "declarationMap": true,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "strict": true,
+        "module": "ES2020",
+        "esModuleInterop": true,
+        "types": ["node"],
+    },
+
+	"include": [
+		"core", "core/core.d.ts",
+	],
+    
+}

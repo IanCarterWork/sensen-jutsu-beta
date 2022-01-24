@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sensen Jutsu</title>
+
+</head>
+
+<body>
+
+
+    <div id="app">
+        
+        <h1>{{ title }}</h1>
+
+        <p>{{ message }}</p>
+
+        <p>{{ counter }}</p>
+
+        <p>{%=JSON.stringify(persons) %}</p>
+
+        <!-- <ul>
+
+            <li sn:each="person as persons">{%= person %}</li>
+            
+        </ul> -->
+
+        <ul>
+
+            {% persons.forEach((person)=>{ %}
+
+                <li>{%= person %} from {{ counter }}</li>
+            
+            {% }) %}
+            
+        </ul>
+
+        <button onclick="{{ $context.increment() }}">Go to Coming Soon</button>
+        
+    </div>
+
+    
+    
+<script defer src="sensen.runtime~basic.js"></script><script defer src="sensen.basic.js"></script></body>
+
+</html>
